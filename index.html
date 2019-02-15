@@ -77,44 +77,46 @@
 
 
 <div class="sechighlight" align="center">
-        <div>
+        
             <div class="instructor" style="width:150px">
                 <a href="https://www.minsukchang.com">
                     <div class="instructorphoto"><img src="img/minsuk.png"></div>
                     <div>Minsuk Chang</div>
                 </a>
-                <div>KAIST</div>
+                <div>KAIST<br><br></div>
             </div>
             <div class="instructor" style="width:150px">
                 <a href="https://scholar.google.ca/citations?user=O3xpA-AAAAAJ">
                     <div class="instructorphoto"><img src="img/anh.png"></div>
                     <div>Anh Truong</div>
+                
                 </a>
-                <div>Adobe Research *</div>
+                <div>Adobe Research Stanford University</div>
+                
             </div>
             <div class="instructor" style="width:150px">
                 <a href="http://www.oliverwang.info">
                     <div class="instructorphoto"><img src="img/oliver.png"></div>
                     <div>Oliver Wang</div>
                 </a>
-                <div>Adobe Research</div>
+                <div>Adobe Research<br><br></div>
             </div>
             <div class="instructor" style="width:150px">
                 <a href="https://graphics.stanford.edu/~maneesh/">
                     <div class="instructorphoto"><img src="img/maneesh.jpg"></div>
                     <div style="width:150px">Maneesh Agrawala</div>
                 </a>
-                <div>Stanford University</div>
+                <div>Stanford University<br><br></div>
             </div>
             <div class="instructor" style="width:150px">
                 <a href="http://juhokim.com">
                     <div class="instructorphoto"><img src="img/juho.jpg"></div>
                     <div style="width:150px">Juho Kim</div>
                 </a>
-                <div>KAIST</div>
+                <div>KAIST<br><br></div>
             </div>
-        </div>
-        * Currently at Stanford University
+        
+        
     </div>
 
 <div class="container sec"> <!-- For Video if we have one... -->
@@ -147,12 +149,68 @@
     <div class="container sec" style="font-size:18px">
         <h2>Experiment 1 - how do people use traditional video interfaces?</h2>
         <div class="row">
-            <div class="col-md-5">
-                <img src="" width="90%" />
-            </div>
-            <div class="col-md-7">
+            <div class="col-md-4">
+                <h3></h3>
+                <img src="img/youtube.png" width="100%" />
+
                 <p>
+                    In this experiment, we aimed to understand how users currently interact with how-to videos for physical tasks. 
+                    Specifically, to understand different types of navigation objectives and user intentions (RQ1), 
+                    we examined when users broke away from their tasks and actively control the video using a conventional mouse-based video navigation interface like YouTube.
                 </p>
+            
+            </div>
+            <div class="col-md-8">
+                <h3>Types of Pause Interactions</h3>
+                <p>
+                    <b>Pace Control Pause.</b> The most common type of pause was a pause to gain more time. 
+                    This happens when the user understands the video content but fails to match the pace of the video. With this pause, 
+                    the user is trying to finish one step before moving onto the next. Unlike other types of pauses, in a pace control pause, 
+                    the user is usually detached from the video, while concentrating on the physical task. 
+                    Once users are caught up to the video using pace control pauses, they often end the pause by pressing play and 
+                    without performing any other type of video navigation.
+                </p>
+                <p>
+                    <b>Content Alignment Pause.</b> The second type of pause is a pause to compare what’s in the video with what’s in the hands of the user. 
+                    This pause precedes the user checking to make sure that their state is similar to that of the video. For example, after the pause, 
+                    users say “I’m just trying to see if this is what he—the video instructor—has done.” or “I need to see if this is it.” 
+                    while making the comparison between what’s in the video and what’s in the hands of the user. Users often observe the 
+                    paused video frame several times during these pauses. During the content alignment pauses,the user attention is split between the video and the physical task.
+                </p>
+                <p>
+                    <b>Video Control Pause.</b> The final type of pause we observed is a pause for further video control. 
+                    Reference jumps In this case, the user pauses the video and searches for the next navigation target 
+                    point on the timeline by either guess- clicking, or scrubbing and examining the thumbnails. In this use case, 
+                    the user’s attention is entirely in the video. 
+                </p>
+                <h3>Types of Jumping Interactions</h3>
+                <p>
+                    <b>Reference Jump.</b> The first type of jump we observed is a reference jump. 
+                    In this case, the user jumps backwards in the video to remind themselves of something they saw in the past. 
+                    Users typically only need to see a still image of the video for this jump.
+                    Usually a forward jump back to the original position is followed by a reference jump to continue where they left off.
+                </p>
+                <p>
+                    <b>Replay Jump.</b> A replay jump is a different form of backward jump, 
+                    where the user wants to re-watch a segment of the video again. 
+                    This jump happens when the user needs to get a better understanding, clarify a possible mistake, 
+                    or to assure that the current understanding is correct. This jump if often followed by a play or a pause interaction.
+                </p>
+                <p>
+                    <b>Skip Jump. </b>A skip jump is a type of forward jump where the user wants to skip content that is less interesting, 
+                    like the introduction of the channel or the personal life of theYouTuber. 
+                    When the goal is to skip introductory content, the target is almost always “the beginning of the actual tutorial”. 
+                    Since the user cannot tell where exactly “the actual tutorial” begins, skip jumps happen in multiples. 
+                    This forward jump often is followed by another skip jump or a play interaction.
+                </p>
+                <p>
+                    <b>Peek Jump.</b>The second type of forward jump is a peek jump, 
+                    where the user wants to skip ahead to see what the user should expect after performing one or a number of steps. 
+                    This happens when users want to check the intermediate or the final result in order to prepare and also check 
+                    if the user is on the right track. The goal is not to skip the current step, but rather to help by anticipating 
+                    future steps. A peek jump is often followed by a jump back to the original position in the video.
+                </p>
+                
             </div>
 
         </div>
@@ -163,11 +221,15 @@
 <div class="container sec" style="font-size:18px">
     <h2>Experiment 2 - how do people use a voice enabled video interface?</h2>
     <div class="row">
-        <div class="col-md-5">
-            <img src="" width="90%" />
+        <div class="col-md-4" >
+            <h3></h3>
+            <img src="img/probe1.jpg" width="100%" />
+            Our research probe allows users to select a YouTube video of their choice and control it with voice. 
+            The interface also indicates when it is listening and transcribes commands in real time to provide visual feedback to the user. 
+            For example, “I heard: rewind 20 seconds”.
         </div>
 
-        <div class="col-md-7">
+        <div class="col-md-8">
 
         </div>
     </div>
@@ -179,10 +241,10 @@
         <div class="container sec" style="font-size:18px">
             <h2>Experiment 3 - how do people "want to" use a voice enable interface?</h2>
             <div class="row">
-                <div class="col-md-5">
-                    <img src="" width="90%" />
+                <div class="col-md-4">
+                    <img src="img/woz.jpg" width="100%" />
                 </div>
-                <div class="col-md-7">
+                <div class="col-md-8">
                     <p>
                     </p>
                 </div>
