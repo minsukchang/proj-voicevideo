@@ -330,31 +330,33 @@
     </div>
 </div>
 
-
-
+<!--
 <div class="container sec" style="font-size:18px">
     <div class="row">
+        <div class="col-md-12">
         <h2>Summary</h2>
         <div>
-           <p> Our study and interview results highlight the challenges, opportunities, and user expectations of using voice interfaces for video tutorials.
+           <p> Our study and interview results highlight the challenges, opportunities, 
+            and user expectations of using voice interfaces for video tutorials.
             We first summarize the user challenges of adapting to a VUI from a GUI when learning physical tasks with video tutorials. 
-            We then summarize how our research methodology of designing a series of experiments in progression can be extended to designing VUI for other applications and domains.
+            We then summarize how our research methodology of designing a series of experiments in progression can be extended to 
+            designing VUI for other applications and domains.
         </p>
         </div>
         <div>
             <h3><b>Transitioning from GUI to VUI</b></h3>
             <p>
-            Mouse vs Voice. We found voice interfaces require an initial pause while issuing subsequent commands. 
-            For example, when using voice input in Study 2, users issued a pause command before every rewind command. 
+            <b>Mouse vs Voice.</b> We found voice interfaces require an initial pause while issuing subsequent commands. 
+            For example, when using voice input in Study 2, users issued a pause command before every rewind command.
             In contrast, when using the traditional mouse interface, users never paused the video before skipping to another point. 
-            We think this is due to the time it takes for the user to speak the voice command and for the system to process it. 
+            We think this is due to the time it takes for the user to speak the voice command and for the system to process it.
             Also, the target is directly specified with mouse (or touch) but with voice the target is often specified relative to the current position of the video. 
             For example, if the user does not pause the video before jumping, the original reference keeps moving, 
-            and the interval they had thought of will not get them to the point they intended. As a result, 
-            the larger consequence is that voice-based interactions require more steps to achieve the same objective (i.e., pause + jump) 
-            than mouse-based interactions do (i.e., click).
-
-            Uncertainty from Unseen Content. When trying to navigate a video tutorial using voice, users make more concrete references to the past, 
+            and the interval they had thought of will not get them to the point they intended. 
+            As a result, the larger consequence is that voice-based interactions require more steps to achieve the same objective (i.e., pause + jump) 
+            than mouse-based interactions do (i.e., click).</p>
+            <p>
+            <b>Uncertainty from Unseen Content.</b> When trying to navigate a video tutorial using voice, users make more concrete references to the past, 
             whereas users have challenges describing later part of the video. For traditional video interfaces, 
             scrubbing and clicking around are often used a solution to quickly peeking into the future. 
             However, for voice interfaces, such a solution does not exist yet. 
@@ -422,50 +424,51 @@
             understand opportunities and challenges, and then carrying out a Wizard-of-Oz study to elicit ideal interaction scenarios
             </p>
         </div>
-
+    </div>
     </div>
 </div>
+-->
+
+<div class="container sec" style="font-size:18px">
+    
+    <div class="row">
+        <div class="col-md-12">
+            <h2>Design Recommendations</h2>    
+        <div>
+            <b>Support Conversational Strategies</b> 
+        </div>
+        <p>
+            Support sequence expansions and command queues as both are strategies users often use. 
+            For example, supporting users to perform a single command multiple times in a row by recognizing “again” 
+            following “go back 5 seconds”, and supporting users to place multiple commands in one utterance 
+            like “go to 2 minutes and 4 second mark and pause” would be useful.
+        </p>
+        <div>
+            <b>Support Iterative Refinements of Commands</b> 
+        </div>
+        <p>
+            Users often need multiple tries to find the intended navi- gation target. 
+            It is because a) what users remember can be different from the part they are looking for or vice versa, 
+            b) sometimes users don’t remember, and c) sometimes users remember but don’t know the exact vocabulary 
+            like the names of knitting techniques and tools. Good examples are support for descriptive commands and keyword search in transcripts.
+        </p>
+        <div>
+            <b>Support Interactions with User Context</b> 
+        </div>
+        <p>
+            Designing voice commands for how-to videos is not about supporting a single command, 
+            but understanding the higher level user intent behind the utterance is crucial. 
+            We identified all seven interaction intents (pace control pause, content alignment pause, 
+            video control pause, reference jump, re- play jump, skip jump, and peek jump) that can be supported. 
+            One possible solution in distinguishing them is to set up the command vocabulary such that each intent has its unique keyword.
+        </p>
+    </div>
+    </div>
+</div>
+
+
 
 <div class="sechighlight">
-    <div class="container sec" style="font-size:18px">
-        
-        <div class="row">
-                <h2>Design Recommendations</h2>    
-            <div>
-                <b>Support Conversational Strategies</b> 
-            </div>
-            <p>
-                Support sequence expansions and command queues as both are strategies users often use. 
-                For example, supporting users to perform a single command multiple times in a row by recognizing “again” 
-                following “go back 5 seconds”, and supporting users to place multiple commands in one utterance 
-                like “go to 2 minutes and 4 second mark and pause” would be useful.
-            </p>
-            <div>
-                <b>Support Iterative Refinements of Commands</b> 
-            </div>
-            <p>
-                Users often need multiple tries to find the intended navi- gation target. 
-                It is because a) what users remember can be different from the part they are looking for or vice versa, 
-                b) sometimes users don’t remember, and c) sometimes users remember but don’t know the exact vocabulary 
-                like the names of knitting techniques and tools. Good examples are support for descriptive commands and keyword search in transcripts.
-            </p>
-            <div>
-                <b>Support Interactions with User Context</b> 
-            </div>
-            <p>
-                Designing voice commands for how-to videos is not about supporting a single command, 
-                but understanding the higher level user intent behind the utterance is crucial. 
-                We identified all seven interaction intents (pace control pause, content alignment pause, 
-                video control pause, reference jump, re- play jump, skip jump, and peek jump) that can be supported. 
-                One possible solution in distinguishing them is to set up the command vocabulary such that each intent has its unique keyword.
-            </p>
-        
-        </div>
-    </div>
-</div>
-
-
-
 <div class="container sec" style="font-size:18px">
     <div class="row">
 
