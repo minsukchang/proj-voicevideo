@@ -330,14 +330,13 @@
     </div>
 </div>
 
-<!--
+
 <div class="container sec" style="font-size:18px">
     <div class="row">
         <div class="col-md-12">
         <h2>Summary</h2>
         <div>
-           <p> Our study and interview results highlight the challenges, opportunities, 
-            and user expectations of using voice interfaces for video tutorials.
+           <p> Our study and interview results highlight the challenges, opportunities, and user expectations of using voice interfaces for video tutorials.
             We first summarize the user challenges of adapting to a VUI from a GUI when learning physical tasks with video tutorials. 
             We then summarize how our research methodology of designing a series of experiments in progression can be extended to 
             designing VUI for other applications and domains.
@@ -370,47 +369,6 @@
             </p>
         </div>
         <div>
-            <h3><b>User Expectations and Opportunities</b></h3>
-            <p><b>Multimodal Reference Strategies. </b>Users often wanted to make references to the objects and speaker in the video. 
-                In Study 3, when users were making multiple corrections to navigate to a specific target point in the video, users have 
-                the advantage of utilizing the paused video frame as additional references, often employing object references. 
-                P1 explained “I look at the frame and the state of the objects that appear to see if it’s before or after 
-                (the point I want to jump to)”. Also, users often made transcript references, referring to things that the tutor has said. 
-                For example, P3 commanded the system “can you repeat that again? How she did multiples of four, the part where 
-                she said multiples of four”. We believe voice assistants with a visual display could utilize this finding,
-                as the referent needs to be visual or textual.</p>
-            <p><b>Conversational Strategies.</b> Users often employ conversational strategies such as latent conversational 
-                intents and sequence expansions. Participants employed a lot of latent conversational intents frequently 
-                used in human-human conversa- tions [26]. For example, participants said “Can I see it again, 10 seconds before?”, 
-                “Can I see the last three knit?”, and “Can you move it back to when she shows how it looks like from the back?”. 
-                While a semantic answer to all of those questions would be a yes or a no, we contextually understand that these are requests, 
-                not participants asking for permission. Also, “I want to go back to the first time she does this with the second needle” by P6 is not a remark,
-                but a command.
-                Participants often used sequence expansion, also heavily used in human-to-human conversations. 
-                For example, P4 said (“rewind 30 seconds until 3 minutes”, “again”) and (“slow
-                it down to .5 and play from 4 minutes”, “okay, from 3:55”). Users expected the wizard to have a memory 
-                of previous commands, and believed the wizard has the shared context.
-                Another strategy participants often used was including command queues in a single utterance. 
-                For example, P2 said “could we change the speed to like 1.25? I want to slow it back down when 
-                she actually starts the tutorial” in the beginning of the video in the introductions segment. 
-                This requires multiple levels of understanding. The system would need to understand the first 
-                command to change the playback speed, detect when the tutorial starts, and remember to change the 
-                playback speed to normal. This is a powerful strategy that gives users more room to concentrate 
-                on the tasks by queuing multiple commands. P3 explicitly mentioned in the interview that 
-                “I want to sequence commands, set rules like if there is a second needle, slow it down.” 
-                These techniques are applicable to generic voice interaction design, and existing services 
-                such as Siri and Google Assistant already support parsing “can I” questions as commands. 
-                However, all other conversational strategies described above is not supported.</p>
-            <p><b>Wizard Strategies.</b> Users want “smarter” voice interactions that resemble a conversation 
-                with another human; the con- versational agent that has complete knowledge of the viewing 
-                experience and can track progress. In Study 3, there are strategies participants used by 
-                relying on the “wizard” being another human. P6 requested “scrub the entire video” during 
-                the experiment and P4 noted in the interview “recognizing the repetition of commands like 
-                how you (wizard) did would be useful. If the system learned what I mean when I just say go back, 
-                and not having the description afterwards would be best”.
-            </p>
-        </div>
-        <div>
             <h3><b>Progression of Experiment Designs</b></h3>
             In order to understand a user-centric design of voice inter- faces for video tutorials, 
             we carefully designed the three studies posing users in three scenarios in progression. 
@@ -427,50 +385,56 @@
     </div>
     </div>
 </div>
--->
 
-<div class="container sec" style="font-size:18px">
-    
-    <div class="row">
-        <div class="col-md-12">
-            <h2>Design Recommendations</h2>    
-        <div>
-            <b>Support Conversational Strategies</b> 
+<div class="sechighlight">
+    <div class="container sec" style="font-size:18px">
+        
+        <div class="row">
+            <div class="col-md-12">
+                <h2>Design Recommendations</h2>    
+            <div>
+                   <p> Based on our findings and understanding from the three studies, 
+                    we propose the following recommendations for designing voice based navigation for how-to videos.</p>
+            </div>
+
+                <div>
+                <b>Support Conversational Strategies</b> 
+            </div>
+            <p>
+                Support sequence expansions and command queues as both are strategies users often use. 
+                For example, supporting users to perform a single command multiple times in a row by recognizing “again” 
+                following “go back 5 seconds”, and supporting users to place multiple commands in one utterance 
+                like “go to 2 minutes and 4 second mark and pause” would be useful.
+            </p>
+            <div>
+                <b>Support Iterative Refinements of Commands</b> 
+            </div>
+            <p>
+                Users often need multiple tries to find the intended navi- gation target. 
+                It is because a) what users remember can be different from the part they are looking for or vice versa, 
+                b) sometimes users don’t remember, and c) sometimes users remember but don’t know the exact vocabulary 
+                like the names of knitting techniques and tools. Good examples are support for descriptive commands and keyword search in transcripts.
+            </p>
+            <div>
+                <b>Support Interactions with User Context</b> 
+            </div>
+            <p>
+                Designing voice commands for how-to videos is not about supporting a single command, 
+                but understanding the higher level user intent behind the utterance is crucial. 
+                We identified all seven interaction intents (pace control pause, content alignment pause, 
+                video control pause, reference jump, replay jump, skip jump, and peek jump) that can be supported. 
+                One possible solution in distinguishing them is to set up the command vocabulary such that each intent has its unique keyword.
+            </p>
         </div>
-        <p>
-            Support sequence expansions and command queues as both are strategies users often use. 
-            For example, supporting users to perform a single command multiple times in a row by recognizing “again” 
-            following “go back 5 seconds”, and supporting users to place multiple commands in one utterance 
-            like “go to 2 minutes and 4 second mark and pause” would be useful.
-        </p>
-        <div>
-            <b>Support Iterative Refinements of Commands</b> 
         </div>
-        <p>
-            Users often need multiple tries to find the intended navi- gation target. 
-            It is because a) what users remember can be different from the part they are looking for or vice versa, 
-            b) sometimes users don’t remember, and c) sometimes users remember but don’t know the exact vocabulary 
-            like the names of knitting techniques and tools. Good examples are support for descriptive commands and keyword search in transcripts.
-        </p>
-        <div>
-            <b>Support Interactions with User Context</b> 
-        </div>
-        <p>
-            Designing voice commands for how-to videos is not about supporting a single command, 
-            but understanding the higher level user intent behind the utterance is crucial. 
-            We identified all seven interaction intents (pace control pause, content alignment pause, 
-            video control pause, reference jump, replay jump, skip jump, and peek jump) that can be supported. 
-            One possible solution in distinguishing them is to set up the command vocabulary such that each intent has its unique keyword.
-        </p>
-    </div>
     </div>
 </div>
 
 
 
-<div class="sechighlight">
+
 <div class="container sec" style="font-size:18px">
-    <div class="row">
+    <div class="row">   
 
         <div class="col-md-5">
                     <h2>CHI 2019 Paper (Camera-Ready)</h2>
@@ -487,7 +451,7 @@
     </div>
     <hr class="style1">
 
-</div>
+
 
 
 
